@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.cart.AdminController">
+   <left>
+      <AnchorPane prefHeight="600.0" prefWidth="250.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="250.0">
+               <children>
+                  <Label layoutX="56.0" layoutY="14.0" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 15, 0.0, 5, 5);" text="Admin Login">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="83.0" text="ID">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="119.0" text="Password">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="adminIdTF" layoutX="79.0" layoutY="79.0" style="-fx-background-radius: 10;" />
+                  <PasswordField fx:id="adminPasswordPF" layoutX="79.0" layoutY="115.0" style="-fx-background-radius: 10;" />
+                  <Button layoutX="14.0" layoutY="147.0" mnemonicParsing="false" onAction="#adminLoginButtonOnAction" prefHeight="39.0" prefWidth="215.0" style="-fx-background-radius: 20; -fx-background-color: #98DED9; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 15, 0.0, 5, 5);" text="Login" textAlignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="25.0" layoutY="227.0" prefHeight="315.0" prefWidth="200.0" style="-fx-background-radius: 20; -fx-background-color: #48CFCB; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 15, 0.0, 5, 5);">
+               <children>
+                  <VBox alignment="CENTER_LEFT" layoutX="13.0" layoutY="21.0" prefHeight="281.0" prefWidth="101.0">
+                     <children>
+                        <Label text="Total Item: ">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Fruit: ">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Food: ">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Grocery: ">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Device: ">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Vegetable:">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </VBox>
+                  <VBox alignment="CENTER_RIGHT" layoutX="114.0" layoutY="21.0" prefHeight="281.0" prefWidth="75.0">
+                     <children>
+                        <Label fx:id="totalL" alignment="CENTER_RIGHT" text="00" textAlignment="RIGHT">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="fruitL" alignment="CENTER_RIGHT" text="00" textAlignment="RIGHT">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="foodL" alignment="CENTER_RIGHT" text="00" textAlignment="RIGHT">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="groceryL" alignment="CENTER_RIGHT" text="00" textAlignment="RIGHT">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="deviceL" alignment="CENTER_RIGHT" text="00" textAlignment="RIGHT">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="vegetableL" alignment="CENTER_RIGHT" text="00">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </AnchorPane>
+   </left>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <AnchorPane fx:id="centerAnchorpane" prefHeight="600.0" prefWidth="550.0" visible="false" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="347.0" prefWidth="550.0">
+               <children>
+                  <Label layoutX="196.0" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 15, 0.0, 5, 5);" text="Add Item">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="57.0" text="Name">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="84.0" text="Price">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="494.0" layoutY="88.0" text="Unit">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="113.0" text="Color">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="455.0" layoutY="59.0" text="Catagory">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="photoIV" fitHeight="150.0" fitWidth="150.0" layoutX="386.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button layoutX="386.0" layoutY="275.0" mnemonicParsing="false" onAction="#importImgButtonOnAction" prefWidth="150.0" style="-fx-background-radius: 10; -fx-background-color: #98DED9; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 15, 0.0, 5, 5);" text="Import Image" />
+                  <Label layoutX="15.0" layoutY="185.0" text="Description">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="descriptionTA" layoutX="16.0" layoutY="212.0" prefHeight="93.0" prefWidth="348.0" />
+                  <TextField fx:id="nameTF" layoutX="74.0" layoutY="58.0" />
+                  <Spinner fx:id="priceSB" editable="true" layoutX="74.0" layoutY="87.0" />
+                  <ComboBox fx:id="unitCB" layoutX="291.0" layoutY="89.0" prefWidth="150.0" />
+                  <ComboBox fx:id="catagoryCB" layoutX="291.0" layoutY="58.0" prefWidth="150.0" />
+                  <ColorPicker fx:id="colorPK" layoutX="74.0" layoutY="114.0" prefHeight="25.0" prefWidth="150.0" />
+                  <Button layoutX="15.0" layoutY="314.0" mnemonicParsing="false" onAction="#addNewItemButtonOnAction" prefHeight="25.0" prefWidth="520.0" style="-fx-background-color: #98DED9; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 15, 0.0, 5, 5);" text="Add New Item" />
+                  <Label layoutX="16.0" layoutY="149.0" text="Total Unit">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Spinner fx:id="totalunitSB" editable="true" layoutX="116.0" layoutY="150.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="346.0" prefHeight="222.0" prefWidth="551.0">
+               <children>
+                  <TableView fx:id="itemsTV" layoutX="1.0" layoutY="46.0" prefHeight="181.0" prefWidth="547.0">
+                    <columns>
+                      <TableColumn fx:id="nameTC" prefWidth="113.66665649414062" text="Name" />
+                        <TableColumn fx:id="unitTC" prefWidth="83.66668701171875" text="Unit" />
+                        <TableColumn fx:id="priceTC" prefWidth="85.33331298828125" text="Price" />
+                        <TableColumn fx:id="catagoryTC" prefWidth="126.6666259765625" text="Catagory" />
+                        <TableColumn fx:id="totalTC" minWidth="0.0" prefWidth="57.0" text="Total" />
+                        <TableColumn fx:id="deleteTC" prefWidth="66.33331298828125" text="Delete" />
+                    </columns>
+                  </TableView>
+                  <Label layoutX="14.0" layoutY="18.0" text="Catagory" />
+                  <Label layoutX="237.0" layoutY="19.0" text="Price" />
+                  <ComboBox fx:id="filtercatagoryCB" layoutX="70.0" layoutY="15.0" prefWidth="150.0" />
+                  <Spinner fx:id="filterFromSB" editable="true" layoutX="275.0" layoutY="15.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Label layoutX="368.0" layoutY="19.0" text="to" />
+                  <Spinner fx:id="filterToSB" editable="true" layoutX="387.0" layoutY="15.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Button layoutX="480.0" layoutY="14.0" mnemonicParsing="false" onAction="#filterButtonOnAction" prefHeight="25.0" prefWidth="58.0" style="-fx-background-radius: 10; -fx-background-color: #98DED9; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 15, 0.0, 5, 5);" text="Filter" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

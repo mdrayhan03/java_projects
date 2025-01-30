@@ -1,0 +1,20 @@
+
+
+Version:	3.50
+CmdLine:	F:\Java\App\Cart.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	F:\Java\App\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+Substitute:	JAVA_HOME = C:\Program Files\Eclipse Adoptium\jdk-21.0.3.9-hotspot\
+Substitute:	PATH = C:\Program Files\Eclipse Adoptium\jdk-21.0.3.9-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\xampp\php;D:\Git Bash\Git\cmd;D:\Python\Scripts\;D:\Python\;C:\Users\MD. Rayhan Hossain\AppData\Local\Microsoft\WindowsApps;D:\VS Code\Microsoft VS Code\bin;C:\PHP;
+JRE paths:	C:\Program Files\Eclipse Adoptium\jdk-21.0.3.9-hotspot\;C:\Program Files\Eclipse Adoptium\jdk-21.0.3.9-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\xampp\php;D:\Git Bash\Git\cmd;D:\Python\Scripts\;D:\Python\;C:\Users\MD. Rayhan Hossain\AppData\Local\Microsoft\WindowsApps;D:\VS Code\Microsoft VS Code\bin;C:\PHP;
+Check launcher:	C:\Program Files\Eclipse Adoptium\jdk-21.0.3.9-hotspot\bin\javaw.exe (OK)
+Version string: 1.021.000_003 / 64-Bit (OK)
+Launcher:	C:\Program Files\Eclipse Adoptium\jdk-21.0.3.9-hotspot\bin\javaw.exe
+Launcher args:	-jar "F:\Java\App\Cart.exe"
+Args length:	27/32768 chars
+Exit code:	0
