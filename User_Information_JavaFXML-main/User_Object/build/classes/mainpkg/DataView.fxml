@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="447.0" prefWidth="669.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.DataViewController">
+   <children>
+      <Label layoutX="37.0" layoutY="32.0" text="Enter ID" />
+      <TextField fx:id="idTextField" layoutX="127.0" layoutY="27.0" />
+      <Label layoutX="37.0" layoutY="63.0" text="Enter Name" />
+      <TextField fx:id="nameTextField" layoutX="127.0" layoutY="58.0" />
+      <Label layoutX="37.0" layoutY="94.0" text="Enter Cgpa" />
+      <TextField fx:id="cgpaTextField" layoutX="127.0" layoutY="89.0" />
+      <Label layoutX="325.0" layoutY="32.0" text="Select Gender" />
+      <RadioButton fx:id="maleRadioButton" layoutX="335.0" layoutY="63.0" mnemonicParsing="false" text="Male" />
+      <RadioButton fx:id="femaleRadioButton" layoutX="335.0" layoutY="84.0" mnemonicParsing="false" text="Female" />
+      <RadioButton fx:id="othersRadioButton" layoutX="335.0" layoutY="105.0" mnemonicParsing="false" text="Others" />
+      <Label layoutX="444.0" layoutY="32.0" text="Enter Password" />
+      <PasswordField fx:id="pwPasswordField" layoutX="444.0" layoutY="58.0" />
+      <ComboBox fx:id="majorComBox" layoutX="444.0" layoutY="100.0" prefWidth="150.0" />
+      <Button layoutX="127.0" layoutY="185.0" mnemonicParsing="false" onAction="#addNewStudentButtonMouseOnAction" text="Add Student Info" />
+      <Button layoutX="385.0" layoutY="185.0" mnemonicParsing="false" onAction="#showStudentInfoButtonMouseOnAction" text="Show Student Info" />
+      <TableView fx:id="studentInfoTableView" layoutX="16.0" layoutY="233.0" prefHeight="200.0" prefWidth="637.0">
+        <columns>
+          <TableColumn fx:id="idTableColumn" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="nameTableColumn" prefWidth="193.0" text="Name" />
+            <TableColumn fx:id="genderTableColumn" prefWidth="96.0" text="Gender" />
+            <TableColumn fx:id="majorTableColumn" prefWidth="104.0" text="Major" />
+            <TableColumn fx:id="cgpaTableColumn" prefWidth="76.0" text="Cgpa" />
+            <TableColumn fx:id="uniNameTableColumn" prefWidth="92.0" text="University" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
